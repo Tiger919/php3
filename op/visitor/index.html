@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>首页 - OP 人物网</title>
+</head>
+
+<body>
+<center>
+  <div class="header">
+    <h1>OP人物网</h1>
+  </div>
+  
+ 
+      <a href="./introduction">网站介绍</a>
+      <a href="./server">服务指南</a>
+      <a href="./search">人物查询</a>
+      <a href="./all">所有人物</a>
+
+      <br>  
+      <img width="340px" height="192px" src="../visitor/picture/logo.png" />
+      <br>
+
+<form action="./login/login.php" method="post">
+  <table border="1">
+  <caption><h2>账号登陆</h2></caption>
+  <tr>
+  <td>用户名：</td>
+  <td><input type="text" name="account" ></td>
+  </tr>
+  <tr>
+  <td>密码：</td>
+  <td><input type="password" name="password" ></td>
+  </tr>
+  <tr>
+  <td colspan="2">
+  <input type="submit" value="登陆">
+  <input type="reset" value="重置">
+  <a href="/register">没有账号？去注册</a>
+  </td>
+  </tr>
+  </table>
+  </form>
+  
+<br><br><br><br>
+    
+  <span class="pipe">|</span>
+  <a href="http://op.x.com/#"  style="color: green">新手|活动|导航</a>
+  <br>
+  <span class="pipe">|</span>
+  <a href="http://op.x.com/#/" >Archiver</a>
+  <span class="pipe">|</span>
+  <a href="http://op.x.com/#" >小黑屋</a>
+  </center>
+
+<div style="position:fixed;right:100;bottom:100">
+<?php
+date_default_timezone_set("PRC");
+echo date("Y-m-d H:i:s")  .PHP_EOL;
+?>
+</div>
+
+
+  
+
+</body>
